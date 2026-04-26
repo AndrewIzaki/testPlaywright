@@ -1,5 +1,3 @@
-const { createElement } = require("react")
-
 console.log("ola mundo")
 
 function AddItem (){
@@ -11,10 +9,12 @@ function AddItem (){
         return
     }
     const li = document.createElement('li')
+
     li.textContent = input.value
     lista.appendChild(li)
     input.value =''
     input.focus()
+    console.log("Item adicionado com sucesso")
 }
 
 function NullField (){
